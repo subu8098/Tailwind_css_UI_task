@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-blue-600 text-white font-semibold rounded flex items-center gap-2 hover:bg-blue-700 transition;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-2 bg-yellow-400 text-gray-900 font-semibold rounded hover:bg-yellow-500 transition;
+  }
+
+  .btn-outline {
+    @apply px-6 py-2 bg-white text-black font-semibold rounded border border-gray-300 hover:bg-gray-50 transition;
+  }
+
+  .feature-card {
+    @apply bg-gray-50 p-6 rounded-lg shadow-sm;
+  }
+
+  .feature-icon {
+    @apply w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-600 text-2xl;
+  }
+
+  .fyers-feature-item {
+    @apply mb-6 last:mb-0;
+  }
+
+  .fyers-feature-title {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .fyers-feature-desc {
+    @apply text-gray-600;
+  }
+}
+
+/* Scrollbar styling (no plugin needed) */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 4px;
+  }
+}
