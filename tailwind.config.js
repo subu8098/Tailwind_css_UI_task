@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {},
   },
+  safelist: ['scrollbar-hide'],
   plugins: [
-    //  require('tailwind-scrollbar'),
     require('tailwind-scrollbar-hide'),
   ],
 }

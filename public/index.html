@@ -11,48 +11,49 @@
 
     
     <!-- Header -->
-
-
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 mb-0">
-        <nav class="w-full ">
-            <div class="flex bg-[#3D3BF3] justify-between sm:justify-around items-center h-20">
-                <div class="flex-shrink-0">
-                    <img src="../assets/FYERS-White-Logo.png" alt="FYERS MF Logo" class="ml-11 h-20 w-28 opacity-100">
+           
+        <header class="bg-white border-b border-gray-200 z-50 mb-0">
+            <nav class="w-full">
+                <div class="flex justify-between items-center bg-[#3D3BF3] h-20 px-4 sm:px-6 lg:px-8">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <img src="../assets/FYERS-White-Logo.png" alt="FYERS MF Logo" class="h-12 xs:h-16 sm:h-20 w-auto max-w-full opacity-100">
+                    </div>
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Products</a>
+                        <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Pricing</a>
+                        <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Platforms</a>
+                        <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Support</a>
+                        <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Resources</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <button class="px-8 py-2 text-sm font-medium border-2 border-gray-50 text-white hover:text-yellow-400">Login</button>
+                        <button class="px-6 py-2 mr-11 bg-[#FFE100] text-black text-sm font-medium hover:bg-blue-700">Sign Up</button>
+                    </div>
+                    <!-- Hamburger Menu Button (Mobile) -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Products  </a>
-                    <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Pricing</a>
-                    <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Platforms</a>
-                    <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Support</a>
-                    <a href="#" class="text-white hover:text-gray-700 text-sm font-medium">Resources</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-4">
-                    <button class="px-8 py-2 text-sm font-medium border-2 border-gray-50 text-white hover:text-yellow-400">Login</button>
-                    <button class="px-6 py-2 mr-11 bg-[#FFE100] text-black text-sm font-medium  hover:bg-blue-700">Sign Up</button>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2">
-                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col space-y-4 ml-2">
-                    <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium ">Products</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Pricing</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Platforms</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Support</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Resources</a>
-                    <div class="flex flex-col space-y-2 pt-4 border-t border-gray-200">
-                        <button class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-md">Login</button>
-                        <button class="px-4 py-2 bg-[#FFE100] text-white text-sm font-medium rounded-md">Sign Up</button>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden pb-4">
+                    <div class="flex flex-col space-y-4 ml-2">
+                        <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Products</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Pricing</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Platforms</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Support</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Resources</a>
+                        <div class="flex flex-col space-y-2 pt-4 border-t border-gray-200">
+                            <button class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-md">Login</button>
+                            <button class="px-4 py-2 bg-[#FFE100] text-white text-sm font-medium rounded-md">Sign Up</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-           
+            </nav>
+        </header>
             
     <!-- Hero Section-->
 
@@ -61,11 +62,11 @@
         <!-- Full Background Image -->
         <img src="../assets/hero_back.jpeg" alt="Hero Background" class="w-full h-full object-cover">
 
-        <div class="absolute top-8 left-4 sm:top-12 sm:left-6 lg:top-16 lg:left-8 max-w-lg z-10">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight font-sans">
-            Invest Smart &<br>Build Timeless<br>Wealth.
+        <div class="absolute top-4 left-2 sm:top-8 sm:left-4 max-w-xs sm:max-w-md z-10">
+            <h1  class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 leading-tight">
+                Invest Smart & Build Timeless Wealth.
             </h1>
-            <p class="text-base sm:text-sm tracking-wide text-gray-300 mb-6">Zero commission direct mutual funds</p>
+            <p class="text-xs sm:text-sm text-gray-300 mb-4">Zero commission direct mutual funds</p>
             <button class="flex items-center gap-2 px-6 py-3 bg-[#3D3BF3]  text-white text-sm sm:text-base font-semibold rounded-md hover:bg-blue-950 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -86,24 +87,24 @@
 
     <section class="py-16 w-full  -mt-8 md:py-24 bg-white">
         <div class=" mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="md:ml-11  text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-left ">Why Mutual Funds?</h2>
+            <h2 class="md:ml-11 break-words text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-left ">Why Mutual Funds?</h2>
             <hr>
-            <div class=" max-w-5xl md:mx-auto grid grid-cols-1 grid-cols-2 mx-4 md:gap-8 ">
+            <div class=" max-w-5xl md:mx-auto grid grid-cols-2 mx-4 md:gap-8 ">
                 <div class="border border-gray-200  ">
                     <div class=" mb-6">
                         <img src="../assets/professional.png" alt="Professional Management" class="w-full h-48 object-contain">
                     </div>
                     <hr class="w-full">
-                    <h3 class="text-3xl max-w-2 font-bold text-gray-900 mt-2 -mb-2 p-3">Professional Management</h3>
-                    <p class="text-gray-600 leading-relaxed p-3">Your money is managed by expert fund managers who research, analyze, and make investment decisions on your behalf.</p>
+                    <h3 class="break-words text-base md:text-3xl font-bold text-gray-900 mt-2 -mb-2 p-3">Professional Management</h3>
+                    <p class="break-words  text-gray-600 leading-relaxed p-3">Your money is managed by expert fund managers who research, analyze, and make investment decisions on your behalf.</p>
                 </div>
                 <div class="border border-gray-200 ">
                     <div class="mb-6">
                         <img src="../assets/diversi.jpg" alt="Diversification" class="w-full h-48 object-contain ">
                     </div>
                     <hr>
-                    <h3 class="text-3xl font-bold text-gray-900 mt-2  -mb-2 p-3">Diversification</h3>
-                    <p class="text-gray-600 leading-relaxed p-3">With one mutual fund, you spread risk across multiple stocks, bonds, or assets — reducing the impact of a single poor performer.</p>
+                    <h3 class="break-words text-base md:text-3xl font-bold text-gray-900 mt-2 -mb-2 p-3">Diversification</h3>
+                    <p class="text-gray-600 break-words leading-relaxed p-3">With one mutual fund, you spread risk across multiple stocks, bonds, or assets — reducing the impact of a single poor performer.</p>
                 </div>
             
             </div>
@@ -112,20 +113,20 @@
             
             <br><br>
             <hr>
-            <div class="max-w-5xl md:mx-auto grid grid-cols-1 grid-cols-2 mx-4 md:gap-8 ">
+            <div class="max-w-5xl md:mx-auto grid  grid-cols-2 mx-4  md:gap-8 ">
                 <div class="border border-gray-200 ">
                     <div class="mb-6">
                         <img src="../assets/wealthy.jpg" alt="Build Wealth Steadily" class="w-full h-48 object-contain">
                     </div>
-                    <h3 class="text-3xl  font-bold text-gray-900 -mb-2 mt-2 p-3">Build Wealth <br>Steadily</h3>
-                    <p class="text-gray-600 leading-relaxed p-3">You can start with small amounts (via SIPs) and still access a wide portfolio that might otherwise require large capital.</p>
+                    <h3 class="break-words text-base md:text-3xl font-bold text-gray-900 mt-2 -mb-2 p-3">Build Wealth <br>Steadily</h3>
+                    <p class="text-gray-600 break-words leading-relaxed p-3">You c amanaan start with small amounts (via SIPs) and still access a wide portfolio that might otherwise require large capital.</p>
                 </div>
                 <div class="border border-gray-200  ">
                     <div class="mb-6">
                         <img src="../assets/flexibility.png" alt="Flexibility & Variety" class="w-full h-48 object-contain">
                     </div>
-                    <h3 class="text-3xl font-bold text-gray-900 -mb-2 mt-2 p-3">Flexibility & Variety</h3>
-                    <p class="text-gray-600 leading-relaxed p-3">Choose from over 1500 direct mutual funds.</p>
+                    <h3 class="break-words text-base md:text-3xl font-bold text-gray-900 mt-2 -mb-2 p-3">Flexibility & Variety</h3>
+                    <p class="text-gray-600 break-words leading-relaxed p-3">Choose from over 1500 direct mutual funds.</p>
                 </div>
             </div>
             <hr>
@@ -137,9 +138,9 @@
     <!-- Why Mutual Funds on FYERS Section? -->
 
 
-    <section class="py-8 md:py-24 bg-white -mt-16 md:-mt-28">
+    <section class="py-2 md:py-1 bg-white  ">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="md:ml-11  text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-left ">Why Mutual Funds on FYERS?</h2>
+            <h2 class="md:ml-11 break-words text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-left ">Why Mutual Funds on FYERS?</h2>
             <hr>
 
 
@@ -147,7 +148,7 @@
                 <div class="space-y-0">
                     <div class="bg-white p-8 border-b border-gray-200">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">DIRECT MUTUAL FUNDS</h3>
-                        <p class="text-gray-600">No distributor commissions, full control</p>
+                        <p class="text-gray-600 break-words">No distributor commissions, full control</p>
                     </div>
                     <div class="bg-gray-100 p-8 border-b border-gray-200">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">PLEDGE MF UNITS</h3>
@@ -179,8 +180,8 @@
                                 <img src="../assets/on_fyres.png" alt="Direct Mutual Funds" class="max-h-full w-auto">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-xl font-thin text-gray-900 mb-2">DIRECT MUTUAL FUNDS</h3>
-                                <p class="text-gray-600 text-sm">No distributor commissions, full control</p>
+                                <h3 class="text-xl break-words font-thin text-gray-900 mb-2">DIRECT MUTUAL FUNDS</h3>
+                                <p class="text-gray-600 text-sm break-words">No distributor commissions, full control</p>
                             </div>
                         </div>
                     </div>
@@ -190,8 +191,8 @@
                                 <img src="../assets/on_fyres.png" alt="Pledge MF Units" class="max-h-full w-auto">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-xl font-thin text-gray-900 mb-2">PLEDGE MF UNITS</h3>
-                                <p class="text-gray-600 text-sm">Unlock liquidity without selling</p>
+                                <h3 class="text-xl break-words font-thin text-gray-900 mb-2">PLEDGE MF UNITS</h3>
+                                <p class="text-gray-600  break-words text-sm">Unlock liquidity without selling</p>
                             </div>
                         </div>
                     </div>
@@ -201,8 +202,8 @@
                                 <img src="../assets/on_fyres.png" alt="Smart SIPs" class="max-h-full w-auto">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-xl font-thin text-gray-900 mb-2">SMART SIPS</h3>
-                                <p class="text-gray-600 text-sm">Automate disciplined investing</p>
+                                <h3 class="text-xl break-words font-thin text-gray-900 mb-2">SMART SIPS</h3>
+                                <p class="text-gray-600 break-words text-sm">Automate disciplined investing</p>
                             </div>
                         </div>
                     </div>
@@ -212,8 +213,8 @@
                                 <img src="../assets/on_fyres.png" alt="Consolidated Portfolio Dashboard" class="max-h-full w-auto">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-xl font-thin text-gray-900 mb-2">CONSOLIDATED PORTFOLIO DASHBOARD</h3>
-                                <p class="text-gray-600 text-sm">Track stocks, mutual funds and ETFs all in one dashboard</p>
+                                <h3 class="text-xl break-words font-thin text-gray-900 mb-2">CONSOLIDATED PORTFOLIO DASHBOARD</h3>
+                                <p class="text-gray-600 break-words text-sm">Track stocks, mutual funds and ETFs all in one dashboard</p>
                             </div>
                         </div>
                     </div>
@@ -241,23 +242,24 @@
     <section class="py-10 md:pb-2 md:pt-16 bg-black">
         <div class="felx felx-col md:flex justify-between items-center   px-4 sm:px-6 lg:px-8 ">
             <div class="md:ml-11">
-                <h2 class="text-5xl max-w-lg md:max-w-full md:text-5xl lg:text-5xl font-bold text-[#F7FD04] mb-4 ml-2">Your Next Level Awaits</h2>
+                <h2 class="text-5xl break-words max-w-lg md:max-w-full md:text-5xl lg:text-5xl font-bold text-[#F7FD04] mb-4 ml-2">Your Next Level Awaits</h2>
                 <p class="text-md md:text-md text-gray-400 mb-2 ml-2">Trade sharper. Invest smarter.</p>
                 <p class="text-md md:text-md text-gray-400 ml-2 mb-9">Experience it all on the all-new FYERS <br>Web & App.</p>
 
             </div>
             
-            <div class="flex mr-0 sm:flex-row items-start  gap-4">
-                <button class=" px-6 py-2 bg-blue-100 text-blue-600 font-semibold  hover:bg-blue-200 transition-colors flex items-center gap-2">
+            <div class="flex mr-0 sm:flex-row items-start flex-wrap gap-4">
+                <button class=" px-6 py-2 break-words bg-blue-100 text-blue-600 font-semibold  hover:bg-blue-200 transition-colors flex items-center gap-2">
                     Download the App
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
-                <button class="px-6 py-2 bg-[#3D3BF3] text-white font-semibold  hover:bg-blue-700 transition-colors">
+                <button class="px-6 py-2 break-words bg-[#3D3BF3] text-white font-semibold  hover:bg-blue-700 transition-colors">
                     Login to FYERS
                 </button>
             </div>
+            
         </div>
     </section>
     <hr class="border-[1px] border-gray-700">
@@ -273,18 +275,18 @@
 
 
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2 pb-2 border-gray-800 -mt-4">
-                    <!-- Left: Logo and tagline -->
+                    <!-- # Left: Logo and tagline -->
                     <div class="flex  md:flex-row items-start md:items-center w-full md:w-auto">
                         <div class="flex items-center">
                             <img src="../assets/FYERS-White-Logo.png" alt="FYERS Logo" class="h-16 md:h-24 mb-2 md:mb-0 inline-block" />
                             <span class=" md:inline-block mx-4 h-10 border-l-2 border-gray-600"></span>
                         </div>
-                        <div class="text-white ml-6 text-md font-semibold mt-2 md:mt-0 md:ml-6 tracking-wider">
+                        <div class="text-white ml-6 break-words text-md font-semibold mt-2  md:mt-0 md:ml-6 tracking-wider">
                             BUILT FOR THE AMBITIOUS SELF-MADE INVESTOR.
                         </div>
                     </div>
-                    <!-- Right: Social icons -->
-                    <div class="flex w-full gap-16  md:gap-8 mt-6 md:mt-0 md:ml-8">
+                    <!-- # Right: Social icons -->
+                    <div class="flex flex-wrap gap-6 md:gap-10 mt-6 md:mt-0 md:ml-8">
                         <a href="#" class="text-white hover:text-gray-400 transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
                         <a href="#" class="text-white hover:text-gray-400 transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
                         <a href="#" class="text-white hover:text-gray-400 transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
@@ -293,13 +295,15 @@
                     </div>
                 </div>
 
+                
+
 
             <div class="mb-11">
                 <p class="hidden md:block text-gray-400 text-xs leading-relaxed">
                     FYERS Securities Private Limited<br>601 and 602, 6th Floor,<br>A Wing, Brigade Magnum,<br>#3, Koramangala Industrial Layout,<br>Bangalore – 560095
                 </p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-5 mt-12 gap-8 mb-12">
+            <div class="grid break-words grid-cols-2 md:grid-cols-5 mt-12 gap-8 mb-12">
                 <div><h4 class="text-white font-semibold mb-4">Resources</h4><ul class="space-y-2"><li><a href="#" class="text-gray-400 text-sm hover:text-white">Downloads</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Fund Transfers</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Bug Bounty Program</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Fyers Systems Status</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Industry Stocks</a></li></ul></div>
                 <div><h4 class="text-white font-semibold mb-4">Company</h4><ul class="space-y-2"><li><a href="#" class="text-gray-400 text-sm hover:text-white">Careers</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Contact Us</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Send Feedback</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Become a Partner</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Trust & Security</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Awards & Recognition</a></li></ul></div>
                 <div><h4 class="text-white font-semibold mb-4">Offerings</h4><ul class="space-y-2"><li><a href="#" class="text-gray-400 text-sm hover:text-white">Investments</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Research Reports</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Integrated Partners</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Trading View</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Institutional Broking</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Calculators</a></li></ul></div>
@@ -307,12 +311,12 @@
                 <div><h4 class="text-white font-semibold mb-4">Policy</h4><ul class="space-y-2"><li><a href="#" class="text-gray-400 text-sm hover:text-white">Terms & Conditions</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">DP - Terms & Conditions</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">AP - Terms & Conditions</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Privacy Policy</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">App - Privacy Policy</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Investor Charter - Depositories</a></li><li><a href="#" class="text-gray-400 text-sm hover:text-white">Investor Charter - Stock Brokers</a></li></ul></div>
             </div>
             <div class="pt-6">
-                <p class="text-gray-500 text-xs leading-relaxed mb-6">Investment in securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI. Issued in the interest of investors. The client can avail to takes complaint/dispute to SEBI portal, in case of any account opening related queries, you can contact us. NSC doesn't give any feedback to such feedback to such stock brokers regarding investor complaints. For any account opening related queries, you can reach out to our sales team at support@fyers.in. For revocation of E-Consent and activation of physical modes kindly update your mobile number with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. Disclaimer: Please find the calculation/ computation methodology to cover in your account. Kindly update your mobile number, email id with your stock brokers to receive information of your transactions directly from Exchange on your mobile/email at the end of the day.</p>
-                <p class="text-gray-500 text-xs leading-relaxed mb-6">Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020.Update your email id and mobile number with your stock broker / depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge.Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month.le a complaint on SEBI SCORES: Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy redressal of the grievances.</p>
+                <p class="text-gray-500 break-words text-xs leading-relaxed mb-6">Investment in securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI. Issued in the interest of investors. The client can avail to takes complaint/dispute to SEBI portal, in case of any account opening related queries, you can contact us. NSC doesn't give any feedback to such feedback to such stock brokers regarding investor complaints. For any account opening related queries, you can reach out to our sales team at support@fyers.in. For revocation of E-Consent and activation of physical modes kindly update your mobile number with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. Disclaimer: Please find the calculation/ computation methodology to cover in your account. Kindly update your mobile number, email id with your stock brokers to receive information of your transactions directly from Exchange on your mobile/email at the end of the day.</p>
+                <p class="text-gray-500 break-words text-xs leading-relaxed mb-6">Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020.Update your email id and mobile number with your stock broker / depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge.Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month.le a complaint on SEBI SCORES: Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy redressal of the grievances.</p>
 
-                <p class="text-gray-500 text-xs leading-relaxed mb-6">KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary. Attention Investors: 1) Stock brokers can accept securities as margins from clients only by way of pledge in the depository system w.e.f September 01, 2020. 2) Update your email and phone number with your stock broker / depository participant and receive OTP directly from depository on your email and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month. In case of discrepancies, kindly contact your stock broker / depository participant within 30 days from the receipt of statement. "Investments in securities market are subject to market risks, read all the related documents carefully before investing". In case of grievances for any of the services rendered by FYERS Securities Pvt. Ltd., you can write to us at: Compliance Officer: Ms. Ruchira Gupta compliance@fyers.in +91-80-40402919 / 20 / 21. or FYERS will not be liable for damages arising out of usage of information available in the website/mobile application/any service availed through Exchange.</p>
-                <div class="flex  md:flex-row justify-between items-center pt-6 mb-9 border-gray-800">
-                    <p class="text-gray-500 text-xs mb-4 md:mb-0">©FYERS Securities Pvt. Ltd. All Rights Reserved</p>
+                <p class="text-gray-500 break-words text-xs leading-relaxed mb-6">KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary. Attention Investors: 1) Stock brokers can accept securities as margins from clients only by way of pledge in the depository system w.e.f September 01, 2020. 2) Update your email and phone number with your stock broker / depository participant and receive OTP directly from depository on your email and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month. In case of discrepancies, kindly contact your stock broker / depository participant within 30 days from the receipt of statement. "Investments in securities market are subject to market risks, read all the related documents carefully before investing". In case of grievances for any of the services rendered by FYERS Securities Pvt. Ltd., you can write to us at: Compliance Officer: Ms. Ruchira Gupta compliance@fyers.in +91-80-40402919 / 20 / 21. or FYERS will not be liable for damages arising out of usage of information available in the website/mobile application/any service availed through Exchange.</p>
+                <div class="flex flex-wrap md:flex-row justify-between items-center pt-6 mb-9 border-gray-800">
+                    <p class="text-gray-500 break-words text-xs mb-4 md:mb-0">©FYERS Securities Pvt. Ltd. All Rights Reserved</p>
                     <button id="scroll-top" class="text-white bg-[#3D3BF3]  p-[2px] hover:text-yellow-200 text-sm font-medium flex items-center gap-2">Scroll to top<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></button>
                 </div>
             </div>
